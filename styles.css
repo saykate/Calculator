@@ -19,15 +19,60 @@
   input, button, textarea, select {
     font: inherit;
   }
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  #root, #__next {
-    isolation: isolate;
-  }
 
 /* general styling */
 
 body {
     font-family: 'Orbitron', sans-serif;
+}
+
+.main-container {
+    width: 12rem;
+    margin: auto;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.display {
+    min-height: 3.5rem;
+}
+
+.flex-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    text-align: center;
+    padding: .5rem 0;
+    border: 1px solid black;
+}
+
+.span-two {
+    flex: 2;
+}
+
+.zero {
+  border-bottom-left-radius: 10px;
+}
+
+.equal {
+  border-bottom-right-radius: 10px;
+}
+
+.func {
+    background-color: rgb(155, 82, 152);
+}
+
+.num {
+    background-color: rgb(145, 184, 66);
+}
+
+.option {
+    background-color: rgb(228, 188, 136);
 }
