@@ -33,8 +33,19 @@ body {
     background-color: black;
 }
 
+.display-box {
+  min-height: 3.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: .5em 1em;
+}
+
 .display {
-    min-height: 3.5rem;
+  font-size: 1.5em;
+  display: flex;
+  color: rgb(228, 188, 136);
+  align-items: center;
 }
 
 .flex-buttons {
@@ -46,7 +57,11 @@ body {
   display: flex;
 }
 
-.flex-child {
+button:hover {
+  color: aqua;
+}
+
+.key {
     flex: 1;
     text-align: center;
     padding: .5rem 0;
@@ -65,11 +80,11 @@ body {
   border-bottom-right-radius: 10px;
 }
 
-.func {
+.operator {
     background-color: rgb(155, 82, 152);
 }
 
-.num {
+.nums {
     background-color: rgb(145, 184, 66);
 }
 
