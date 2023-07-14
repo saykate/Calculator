@@ -76,11 +76,11 @@ button:hover {
   border-bottom-left-radius: 10px;
 }
 
-.equal {
+.div {
   border-bottom-right-radius: 10px;
 }
 
-.operator {
+.operator, .equals {
     background-color: rgb(155, 82, 152);
 }
 
