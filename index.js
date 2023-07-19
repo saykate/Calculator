@@ -14,7 +14,6 @@ let firstNum = '';
 let secondNum = '';
 let operator = '';
 let outcome = '';
-let maxLength = 8;
 
 const allClear = (e) => {
     display.innerText = '0';
@@ -35,11 +34,11 @@ const multiply = (x, y) => {
     return x * y;
 }
 const divide = (x, y) => {
-    // if (y === 0) {
-    //     return "No can do";
-    // } else {
+       if (y === "0") {
+        return 'Nope';
+       } else {
         return x / y;
-    // }
+       }
 }
 
 const operations = () => {
@@ -51,7 +50,7 @@ const operations = () => {
         outcome = multiply(firstNum, secondNum)
         } else if (operator === '\u00F7') {
         outcome = divide(firstNum, secondNum)
-            }
+        }
         if (outcome.toString().length > 10) {
             display.innerText = outcome.toFixed(3);
         } else {
