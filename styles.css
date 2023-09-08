@@ -24,6 +24,8 @@
 
 body {
     font-family: 'Orbitron', sans-serif;
+    height: 100vh;
+    margin-top: 10%;
 }
 
 .main-container {
